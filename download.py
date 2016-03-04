@@ -143,7 +143,7 @@ if __name__ == '__main__':
 
     for r in all_results:
         r['LastActivity'] = datetime.strptime(
-            r['LastActivity'], "%m/%d/%Y %I:%M:%S %p")
+            r['LastActivity'], "%d/%m/%Y %I:%M:%S %p")
     all_results = [
         r for r in all_results
         if r['LastActivity'] >= START_DATE
